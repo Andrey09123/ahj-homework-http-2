@@ -6,7 +6,7 @@ class Ticket {
       this.name = data.name;
       this.status = data.status,
       this.created = getCreated();
-      this.description = description,
+      this.description = data.description;
     }
 
     getData() {

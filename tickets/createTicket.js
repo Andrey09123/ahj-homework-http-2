@@ -7,7 +7,7 @@ const createTicket = function (data) {
     let ticket;
     if (data.id === 'null') {
         ticket = new Ticket(data);
-        const ticketFull = new TicketFull(ticket.getData(), data.description);
+        const ticketFull = new TicketFull(ticket.getData());
 
         allTickets.push(ticket);
         allTicketsFull.push(ticketFull);
